@@ -1,5 +1,4 @@
 Blank Intel XDK App Designer Project for Cordova
-================================================
 
 See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
 
