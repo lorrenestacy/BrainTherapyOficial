@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html>
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="galleria/galleria.classic.css">
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; zoom: 100% ; }                           @viewport { width: 100vw ; zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; }                                    @viewport { user-zoom: fixed ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <script src="intelxdk.js"></script>
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/init-app.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+        <script type="application/javascript" src="webrtc/gab.websocket.js"></script>
+        <script type="application/javascript" src="webrtc/adapter.js"></script>
+        <script type="application/javascript" src="webrtc/woogeen.js"></script>
+        <script type="application/javascript" src="webrtc/socket.io.js"></script>
+        <script type="application/javascript" src="webrtc/woogeen.p2p.js"></script>
+        <script type="application/javascript" src="webrtc/chatwidget.js"></script>
+        <script type="application/javascript" src="webrtc/init.js"></script>
+        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
+        <!-- MENU -->
+        <script src="intelxdk.js"></script>
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script type="text/javascript" src="app/deviceCheck.js"></script>
+        <script>
+            var onDeviceReady=function(){                             // called when Cordova is ready
+               if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+                    navigator.splashscreen.hide() ;                 // hide splash screen
+                }
+           };
+           document.addEventListener("deviceready", onDeviceReady, false) ;
+        
+                
+            function includeJavaScript( url ){
+                var tag = document.createElement( 'script' );
+                tag.type = "text/javascript";
+                tag.src = url;
+        
+                // Insert it to the <head>
+                document.getElementsByTagName("head")[0].appendChild( tag );
+            }
+			
+			function adicionaNota(){
+			var nome;
+			do {	nome = prompt ("Adicione uma nota ao agendamento");
+					} while (nome == null || nome == "");
+					alert ("Seu comentário: "+nome+" ,está guardado agora, parabéns! ");
+						}
+						function emotions_opcoes(){
+			var nome;
+			do {	nome = prompt ("Como se sente agora?");
+					} while (nome == null || nome == "");
+					alert ("Ok, entendemos!");
+						}
+						function espera(){
+						//if horaAtual == horaMarcada fica simbolo muda para checado verde
+						
+						}
+        </script>
+        <script>
+            if (deviceCheck.windows8) {
+            		    includeJavaScript("vendor/jquery/jquery-1.8.2-win8-1.0.js");
+            		}
+            		else {
+            		    includeJavaScript("vendor/jquery/jquery-1.8.0.js");
+            		}
+                    setTimeout(function(){
+                    	includeJavaScript("vendor/jquery.mobile/jquery.mobile-1.1.1.js");
+                		includeJavaScript("app/springboard.js");
+                        }, 100);
+        </script>
+        <!-- FIM MENU -->
+
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="admob/admob.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+
+        <script>
+        </script>
+        <script type="application/javascript" src="galleria/galleria-1.3.6.min.js"></script>
+        <script type="application/javascript" src="galleria/galleria.classic.min.js"></script>
+        <script type="application/javascript" src="galleria/galleria-startup.js"></script>
+    </head>
+
+    <body id="afui" class="">
+
+        <!--        <input type="text" id="textfield">
+        <input type="button" value="salvar" onclick="save()">
+        <input type="button" value="remover" onclick="remove()">    -->
+        <header class="wrapping-col wrap-element uib_w_11" data-uib="app_framework/header" data-ver="2" id="af-header-0">
+            <div class="widget uib_w_46 scale-image header-left" data-uib="media/img" data-ver="0">
+                <figure class="figure-align">
+                    <img src="images/image.png">
+                    <figcaption data-position="bottom"></figcaption>
+                </figure>
+            </div>
+            <h1>BrainTherapy</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_14 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_18" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button widget uib_w_19 header-left d-margins" data-uib="app_framework/button" data-ver="1" href="#menu_principal" data-transition="fade">Voltar</a>
+            <h1></h1>
+            <div class="widget uib_w_102 header-right fonte_titulo_memorias" data-uib="media/text" data-ver="0">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div>
+                    <p>JOGOS DA MEMÓRIAS</p>
+                </div>
+            </div>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_21" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button widget uib_w_22 header-left d-margins" data-uib="app_framework/button" data-ver="1" href="#menu_principal" data-transition="fade">Voltar</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_24" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button widget uib_w_25 header-left d-margins" data-uib="app_framework/button" data-ver="1" href="#menu_principal" data-transition="fade">Voltar</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_42 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-5"><a class="button backButton">Back</a>
+            <h1>Insira suas atividades</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_47 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-7"><a class="button backButton">Back</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_113 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-6"><a class="button backButton">Back</a>
+            <h1>descubra e relembre!</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_114 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-8"><a class="button backButton">Back</a>
+            <h1>ESCOLHA AGORA UMA OPÇAO PARA COLOCAR</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_129 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-9"><a class="button backButton">Back</a>
+            <h1>Pessoas que conheço - Memórias</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_130 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-10"><a class="button backButton">Back</a>
+            <h1>Agende aqui suas tarefas</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_183 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-11"><a class="button backButton">Back</a>
+            <h1>MINHA AGENDA DE DIA-A-DIA</h1> 
+            <a href="javascript" onclick="emotions_opcoes">
+                <img src="images/springboard/carinha_feliz.png" style="height:35px; width:45px; float:right; margin:3px;">
+                <span class="uib-caption"></span>
+            </a>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_184 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-12"><a class="button backButton">Back</a>
+            <h1>MINHA AGENDA DA TARDE</h1>
+            <a href="javascript" onclick="emotions_opcoes">
+                <img src="images/springboard/carinha_feliz.png" style="height:35px; width:45px; float:right; margin:3px;">
+                <span class="uib-caption"></span>
+            </a>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_185 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-13"><a class="button backButton">Back</a>
+            <h1>MINHA AGENDA DA NOITE</h1>
+            <a href="javascript" onclick="emotions_opcoes">
+                <img src="images/springboard/carinha_feliz.png" style="height:35px; width:45px; float:right; margin:3px;">
+                <span class="uib-caption"></span>
+            </a>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_186 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-14"><a class="button backButton">Back</a>
+            <h1>MINHA AGENDA DA MANHÃ</h1>
+            <a href="javascript" onclick="emotions_opcoes">
+                <img src="images/springboard/carinha_feliz.png" style="height:35px; width:45px; float:right; margin:3px;">
+                <span class="uib-caption"></span>
+            </a>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_187 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-15"><a class="button backButton">Back</a>
+            <h1>VAMOS COLOQUE AQUI UMA OBSERVAÇÃO</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_191 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-16"><a class="button backButton">Back</a>
+            <h1>MINHAS MEMORIAS - LUGARES</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_194 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-17"><a class="button backButton">Back</a>
+            <h1>MINHAS MEMORIAS - TRABALHOS</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_196 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-18"><a class="button backButton">Back</a>
+            <h1>MINHAS MEMORIAS - ANIMAIS</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_197 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-19"><a class="button backButton">Back</a>
+            <h1>MINHAS MEMORIAS - MINHAS COMIDAS FAVORIDAS</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_205 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-20"><a class="button backButton">Back</a>
+            <h1>MINHAS MEMORIAS - PESSOAS</h1>
+        </header>
+        <div id="content" class="uwrap">
+            <div class="upage panel fundo-principal" id="mainpage" data-header="none" data-footer="none">
+                <div class="upage-outer">
+                    <div class="upage-content content-area vertical-col" id="uib_page_2">
+                        <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/flip_switch" data-ver="1">
+                            <label class="narrow-control label-top-left">Deslize a barra para Começar</label>
+
+                            <div class="wide-control">
+                                <input type="checkbox" class="toggle" id="af-flipswitch-0" checked="checked">
+                                <label for="af-flipswitch-0" data-off="Sr." data-on="Sra."><span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/springboard/BRAINTHERAPY.png" alt="logo" id="imagem-logo">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="widget uib_w_2 d-margins" data-uib="media/text" data-ver="0">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div>
+                                <p>App para portadores de alzheimer testa sua capacidade de memória e concentração, visa estimular e exercitar o raciocínio cognitivo e atenção.</p>
+                            </div>
+                        </div>
+                        <div class="table-thing with-label widget uib_w_5 d-margins" data-uib="app_framework/input" data-ver="1">
+                            <label class="narrow-control label-inline">ano de nascimento</label>
+                            <input class="wide-control" type="text" placeholder="coloque aqui o ano em que você nasceu.">
+                        </div><a class="button widget uib_w_4 d-margins" data-uib="app_framework/button" data-ver="1" href="#menu_principal" data-transition="fade">Vamos começar?</a>
+                        <input type="button" value="clique aqui">
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- pág menu principal -->
+
+            <!-- stylesheets -->
+            <!-- note: use jquery.mobile-1.1.1.min.css (and jquery.mobile-1.1.1-custom.css) for production -->
+            <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1.css">
+            <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1-custom.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <!-- scripts -->
+
+            <!-- note: use jquery-1.8.0.min.js & jquery.mobile-1.1.1.min.js for production -->
+
+            <!-- entra conteudo da pág menu principal -->
+
+            <!-- fim pág principal -->
+            <div class="upage vertical-col panel" id="menu_principal" data-header="af-header-0" data-footer="none" data-role="page" data-theme="a">
+
+                <input type="text" id="Data">Atividades: Café - 9:00 Tomar antibiótico da pneumonia - às 9:40 Ir ao pediatra - Dr. Carlos - 10:30
+
+                <!-- content -->
+                <div data-role="content" class="springboard-container" style="background-color: #FF3300">
+
+                    <!-- use jquery mobile grid system to draw 2x2 springboard -->
+                    <!-- ui-grid-a: divides page into a grid with 2 columns    -->
+                    <!-- ui-block-a is left column, ui-block-b is right column -->
+
+                </div>
+
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                <div="">
+                    <span class="uib_shim"></span>
+                </a>
+                <div class="galleria image-gallery-size widget uib_w_161 d-margins" data-uib="media/image_gallery" data-ver="0" data-sm-trigger="true" images-json="gallery_images/gallery_images.json">
+                </div>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_96 d-margins" data-uib="media/graphic_button" data-ver="0">
+                    <span class="uib-caption"></span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_95 d-margins" data-uib="media/graphic_button" data-ver="0">
+                    <span class="uib-caption"></span>
+                </a>
+
+                <div class="uib-grid widget uib_w_97 grid-text grid-height menu_principal" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_98 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#memoria" data-transition="fade">
+                                <img src="images/springboard/memo.png">
+                                <span class="uib-caption">MEMÓRIAS</span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_99 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#Agenda" data-transition="fade">
+                                <img src="images/springboard/agenda.png">
+                                <span class="uib-caption">DIÁRIO</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_100 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#musicas" data-transition="fade">
+                                <img src="images/springboard/music.png">
+                                <span class="uib-caption">MÚSICAS</span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_101 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#quiz" data-transition="fade">
+                                <img src="images/springboard/tuto.png">
+                                <span class="uib-caption">Tutorial</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sbs-container widget uib_w_125" data-uib="layout/side_by_side" data-ver="0">
+                    <div class="leftContent widget-container">
+                    </div>
+                    <div class="rightContent widget-container"></div>
+                </div><a class="button widget uib_w_131 d-margins icon stack orange" data-uib="app_framework/button" data-ver="1" id="link_abraz">Visitar ABRAZ para artigos</a>
+
+                <div class="widget uib_w_126 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>Tutorial, saiba mais..</p>
+                    </div>
+                </div>
+            </div>
+            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+            <div="">
+            </a>
+            <div class="upage vertical-col left panel" id="inicio_game_memoria" data-header="af-header-6" data-footer="af-footer-0">
+
+            </div>
+            <div class="upage vertical-col panel" id="inserir_lembranca" data-header="af-header-8" data-footer="none">
+                <div class="uib-grid widget uib_w_115 grid-text grid-height primeira_pag_memorias" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_200 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#memorias_pessoas" data-transition="fade">
+                                <img src="images/springboard/pessoas.png">
+                                <span class="uib-caption">PESSOAS</span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_199 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#memorias_lugares" data-transition="fade">
+                                <img src="images/springboard/lugares.png">
+                                <span class="uib-caption">LUGARES</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_201 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#memorias_bichos" data-transition="fade">
+                                <img src="images/springboard/bichos.png">
+                                <span class="uib-caption">ANIMAIS</span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_202 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#memorias_comidas" data-transition="fade">
+                                <img src="images/springboard/comida.png">
+                                <span class="uib-caption">COMIDAS</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_203 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                                <img src="images/springboard/trabalho.png">
+                                <span class="uib-caption">TRABALHO</span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_204 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                                <img src="images/springboard/sonhos.png">
+                                <span class="uib-caption">SONHOS E DESEJOS</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upage vertical-col left panel" id="memorias_lugares" data-header="af-header-16" data-footer="none">
+                <div class="uib-grid widget uib_w_195 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="agendar_manha" data-header="af-header-14" data-footer="none">
+                <div class="uib-grid widget uib_w_139 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_140 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>HORÁRIO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_141 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>STATUS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_142 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>MAIS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_143 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>LOCAL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_144 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>8:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_145 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>9:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_159 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>10:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="Digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_160 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel" id="Agenda" data-header="af-header-11" data-footer="none">
+                <div class="uib-grid widget uib_w_146 grid-text grid-height calendar" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_147 d-margins dia_da_semana" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>Dia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_148 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>NOTA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_149 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>MANHA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_150 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>TARDE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_151 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>NOITE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_152 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>5 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_153 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>6 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_154 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>7 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_155 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>8 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_156 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>9 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_157 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>10 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_158 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>11 FEVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="adicionaNota()">
+                                <img src="images/springboard/adicionar_agenda.png" style="height:45px; width:75px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_manha">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_tarde">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="#agendar_noite">
+                                <img src="images/springboard/ponto_interroga.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="agendar_tarde" data-header="af-header-12" data-footer="none">
+                <div class="uib-grid widget uib_w_162 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_163 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>HORÁRIO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_164 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>STATUS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_165 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>MAIS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_166 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>LOCAL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_167 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_168 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_169 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_170 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_171 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>16:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_173 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upage vertical-col panel" id="agendar_noite" data-header="af-header-13" data-footer="none">
+                <div class="uib-grid widget uib_w_174 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_175 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>HORÁRIO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_176 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>STATUS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_177 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>MAIS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_178 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>LOCAL</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_179 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_180 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>19:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_181 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <div class="widget uib_w_182 d-margins" data-uib="media/text" data-ver="0">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div>
+                                    <p>21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uib-grid-cell widget-container">
+                            <a href="javascript" onclick="status()">
+                                <img src="images/springboard/espera.png" style="height:35px; width:45px;">
+                                <span class="uib-caption"></span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container">
+                            <input value="digite aqui o local da agenda">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="fazer_nota_agendamento" data-header="af-header-15" data-footer="none">
+                <div class="widget uib_w_188 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0">
+                    <div class="widget uib_w_208 d-margins" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upage vertical-col panel" id="memorias_bichos" data-header="af-header-18" data-footer="none"></div>
+            <div class="upage vertical-col panel" id="memorias_comidas" data-header="af-header-19" data-footer="none"></div>
+            <div class="upage vertical-col panel" id="memorias_trabalho" data-header="af-header-17" data-footer="none">
+                <div class="uib-grid widget uib_w_193 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_198 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                                <img src="images/springboard/escritorio.png">
+                                <span class="uib-caption">Meu escritório</span>
+                            </a>
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel" id="memorias_pessoas" data-header="af-header-20" data-footer="none">
+                <div class="uib-grid widget uib_w_206 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_207 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                                <img src="images/springboard/irma.jpg">
+                                <span class="uib-caption">Button</span>
+                            </a>
+
+                        </div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                    <div class="uib-grid-row">
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="uib-grid-cell widget-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="wrap-element uib_w_128" data-uib="app_framework/footer" data-ver="1" id="af-footer-0"></footer>
+        <footer class="wrap-element uib_w_124" data-uib="app_framework/footer" data-ver="1" id="af-footer-1"></footer>
+
+        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+        <div="">
+        </a>
+
+        <div class="upage panel" id="memoria" data-header="af-header-2" data-footer="af-footer-2">
+            <div class="upage-outer">
+                <div class="upage-content content-area vertical-col left" id="page_93_67">
+                    <div class="widget uib_w_103 widget-container content-area vertical-col uib-card section-dimension-103 primeira_pag_memorias cpad-1" data-uib="layout/card" data-ver="0">
+                        <div class="widget uib_w_105 scale-image d-margins neuronios_memorias" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/springboard/neuronios.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                        <section class="card-header widget-container content-area vertical-col"><a class="button widget uib_w_104" data-uib="app_framework/button" data-ver="1">COMEÇAR!</a>
+                        </section>
+                    </div>
+                </div>
+                <div class="inner-element uib_w_106 uib_sidebar rightbar bar-bg thumb-bg bar-gutter" data-uib="layout/right_sidebar" data-ver="1" data-anim="{'style':'squeeze', 'v':130, 'side':'right', 'dur':200}" id="menu_lateral_memorias">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <ul class="list widget uib_w_108 d-margins" data-uib="app_framework/listview" data-ver="1">
+                            <li class="widget uib_w_109" data-uib="app_framework/listitem" data-ver="1"><a class="icon loading" href="#inserir_lembranca" data-transition="fade">COLOCAR MEMORIA</a>
+                            </li>
+                            <li class="widget uib_w_111" data-uib="app_framework/listitem" data-ver="1"><a class="icon heart">REVER LEMBRANÇAS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage vertical-col left panel" id="quiz" data-header="af-header-3" data-footer="af-footer-3"></div>
+        <div class="upage vertical-col left panel" id="musicas" data-header="af-header-4" data-footer="af-footer-4">
+            <div class="uib-grid widget uib_w_209 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="upage panel" id="agendar_dia" data-header="af-header-10" data-footer="af-footer-8">
+            <div class="upage-outer">
+                <div class="upage-content content-area wrapping-col right" id="page_3_27"></div>
+                <div class="inner-element uib_w_31 uib_sidebar rightbar bar-bg thumb-bg bar-gutter" data-uib="layout/right_sidebar" data-ver="1" data-anim="{'style':'squeeze', 'v':200, 'side':'right', 'dur':200}">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <ul class="list widget uib_w_32 d-margins" data-uib="app_framework/listview" data-ver="1">
+                            <li class="widget uib_w_33" data-uib="app_framework/listitem" data-ver="1">
+                                <a class="icon pencil"></a>
+                            </li>
+                            <li class="widget uib_w_34" data-uib="app_framework/listitem" data-ver="1">
+                                <a class="icon picture"></a>
+                            </li>
+                            <li class="widget uib_w_35" data-uib="app_framework/listitem" data-ver="1"><a href="#diario" data-transition="fade">sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage vertical-col left panel" id="dia_agenda" data-header="af-header-5" data-footer="af-footer-9">
+
+            <div class="uib-grid widget uib_w_44 grid-text grid-height d-margins dia_agenda" data-uib="layout/grid" data-ver="0">
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container">
+                        <div class="widget uib_w_45 d-margins" data-uib="media/text" data-ver="0">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div>
+                                <p>00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container">
+                        <div class="widget uib_w_94 d-margins style-6" data-uib="media/text" data-ver="0">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div>
+                                <p>01:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+                <div class="uib-grid-row">
+                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container"></div>
+                </div>
+            </div>
+            <div class="widget uib_w_93 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div>
+                    <p>Minha Atividades Programadas:</p>
+                    <p>(clique no botão Meu calendário)</p>
+                </div>
+            </div><a class="button widget uib_w_92" data-uib="app_framework/button" data-ver="1" href="#diario" data-transition="fade">Meu Calendário</a>
+        </div>
+
+        <script>
+            function dataAtualFormatada(){
+    var data = new Date();
+    var dia = data.getDate();
+    if (dia.toString().length == 1)
+      dia = "0"+dia;
+    var mes = data.getMonth()+1;
+    if (mes.toString().length == 1)
+      mes = "0"+mes;
+    var ano = data.getFullYear();  
+    return "Estamos no dia! "+dia+"/"+mes+"/"+ano;
+}
+        </script>
+        <script>
+            $('#Data').val(dataAtualFormatada);
+        </script>
+        <footer class="wrap-element uib_w_43" data-uib="app_framework/footer" data-ver="1" id="af-footer-9"></footer>
+        <footer class="wrap-element uib_w_37" data-uib="app_framework/footer" data-ver="1" id="af-footer-8"><a class="widget uib_w_39 icon tag" data-uib="app_framework/button" data-ver="1" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(102, 102, 102); border-top-left-radius: 6px; border-bottom-left-radius: 6px;" id="botao_menu_lateral">Anotar</a>
+            <a class="widget uib_w_40 icon warning red" data-uib="app_framework/button" data-ver="1">cancelar</a>
+        </footer>
+
+        <footer class="wrap-element uib_w_36" data-uib="app_framework/footer" data-ver="1" id="af-footer-5"></footer>
+        <footer class="wrap-element uib_w_23" data-uib="app_framework/footer" data-ver="1" id="af-footer-4"></footer>
+        <footer class="wrap-element uib_w_20" data-uib="app_framework/footer" data-ver="1" id="af-footer-3"></footer>
+        <footer class="wrap-element uib_w_17" data-uib="app_framework/footer" data-ver="1" id="af-footer-2"><a class="widget uib_w_107 fonte_botao_contruir_memorias icon pencil" data-uib="app_framework/button" data-ver="1">VAMOS CONTRUIR</a>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,168 @@
+ <!-- home page -->
+    <div data-role="page" id="home" data-theme="a">
+    
+        <!-- content -->
+        <div data-role="content" class="springboard-container"  style="background-color: #FF3300">
+        
+            <!-- custom header -->
+            <div class="springboard-heading">
+              
+                BrainTherapy
+            </div>
+
+            <!-- use jquery mobile grid system to draw 2x2 springboard -->
+            <!-- ui-grid-a: divides page into a grid with 2 columns    -->
+            <!-- ui-block-a is left column, ui-block-b is right column -->
+            
+            <div class="ui-grid-a springboard">
+                
+                <!-- row 1, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#friends" data-transition="flip">
+                        <img src="images/springboard/memorias.png" class="springboard-portrait-img" />
+                        <p></p><p>Memórias</p>
+                    </a>
+                </div>
+                
+                <!-- row 1, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#videos" data-transition="flip">
+                        <img src="images/springboard/diario.png" class="springboard-portrait-img"></img>
+                        <p></p><p>Diário</p>
+                    </a>
+                </div>
+                <!-- row 2, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#photos" data-transition="flip">
+                        <img src="images/springboard/musicas.png" class="springboard-portrait-img"></img>
+                        <p></p><p>Toca-músicas</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#blogs" data-transition="flip">
+                        <img src="images/springboard/tumblr.png" class="springboard-portrait-img"></img>
+                        <p></p><p>Quiz</p>
+                    </a>
+                </div>
+    <!-- row 2, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#photos" data-transition="flip">
+                        <img src="images/springboard/instagram.png" class="springboard-portrait-img"></img>
+                        <p></p><p>Outro1</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#blogs" data-transition="flip">
+                        <img src="images/springboard/tumblr.png" class="springboard-portrait-img"></img>
+                        <p></p><p>Outro2</p>
+                    </a>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+<!-- content -->
+        
+    </div> <!-- page: home -->
+    
+    <!-- friends -->
+    <div data-role="page" id="friends" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>Memorias</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    &lt Back
+                </a>
+            </div>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+        
+    </div> <!-- page: friends -->
+
+    <!-- videos -->
+    <div data-role="page" id="videos" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>Diário</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    &lt Back
+                </a>
+            </div>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+    <!-- photos -->
+    <div data-role="page" id="photos" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>Toca-músicas</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    &lt Back
+                </a>
+            </div>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+    </div> <!-- page: photos -->
+
+    <!-- blogs -->
+    <div data-role="page" id="blogs" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>Quiz</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    &lt Back
+                </a>
+            </div>
+        </div>
+        
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+    </div> <!-- page: blogs -->

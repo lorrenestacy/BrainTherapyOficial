@@ -1,0 +1,32 @@
+ 
+ 
+ function save(){
+            
+            var fieldValue = document.getElementById('textfield').value;
+            localStorage.setItem('varDaAppli', fieldValue);
+            
+            
+        }
+            function remove(){
+                document.getElementById('textfield').value='';
+                localStorage.removeNamedItem('varDaAppli');
+            }
+            function load(){
+                
+                var storedValue = localStorage.getItem('varDaAppli');
+                if(storedValue){
+                    
+                    document.getElementById('textfield').value = storedValue;
+                    
+                }
+            }
+			
+			<body id="afui" class="" onload="load()">
+			
+			
+			notes:  https://www.youtube.com/watch?v=Jc_Yycz7MEc
+			https://www.youtube.com/watch?v=PwC5MQscKvE
+			https://www.youtube.com/watch?v=XsOIDHNl1as
+			https://www.youtube.com/watch?v=Er05BfJrd5g daora
+			https://www.youtube.com/watch?v=AX2yksAqzQE daora
+			http://www.photoshoponline.com.br/editor/ photoshop online
