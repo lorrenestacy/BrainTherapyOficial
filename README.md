@@ -12,7 +12,7 @@ See the *Blank Cordova Starter* template for more information.
 
 Descrição do projeto:
 
-Applicação de Terapia Ocupacional para paciente portadores de alzheimer na fase inicial e intermediária. Treina as funções cognitivas, memória e atenção dos pacientes. Uso assistido, com cuidadores, família e amigos. 
+Applicação para dispositivos móveis(tablets e smartphones) de Terapia Ocupacional para paciente portadores de alzheimer na fase inicial e intermediária. Treina as funções cognitivas, memória e atenção dos pacientes. Uso assistido, com cuidadores, família e amigos. 
 Há 3 elementos: O memória, O diário, Minhas músicas.
 
 1 - treino da memória, simbolizam as lembranças de quando eram vibrantes. Mini quiz das lembranças - fotos de pessoas, animais, lugares, comidas etc. O paciente deve adivinhar ql é a relação, quem, o que é, quem pertence, de onde etc.
@@ -23,4 +23,20 @@ Há 3 elementos: O memória, O diário, Minhas músicas.
 Obs.: Uso de murais; anotações de atividades, conteúdo, orientação - data, hora; representação - grandes ícones e ferramentas; tutorias breves de explicação; link para cuidadores - artigos de ajuda.
 
 
-Instruções para instalação do Git para compartilhar e contribuir com a construção e desenvolvimento do BrainTherapy. 
+Instruções para instalação do Git no seu ambiente local(sua máquina vinculada ao git deste repositório)para contribuir na construção e desenvolvimento do BrainTherapy. Toda ajuda é bem-vinda e necessária. :)
+
+1 - crie uma conta no git hub. instale o git hub(para versão windows se essa for sua máquina). Não esqueça de confirmar se o Gitbash foi instalado também no download, digo isso porque pode ser que tenha que instalá-lo se não estiver no git, assim como o glassfish para o netbeans. O gitbash serve como o prompt do git, lá vc fará linhas de comando para a comunicação do seu pc com o repositório central(onde iremos trabalhar no projeto).
+
+2 - associar sua conta do github com este computador:
+Gerar um ashh key - irá te permitir comitar seu pc com o git.(parte um pouco complicada)
+Abra o git bash e cole: " git config --global user.email johndoe@example.com "(o email de cadastro do seu usuário git).
+  http://git-scm.com/book/pt-br/v1/Git-no-Servidor-Gerando-Sua-Chave-P%C3%BAblica-SSH (link de tutorial para a próxima ação)
+digite agora: 
+$ cd ~/.ssh
+$ ls
+
+3 - agora é só aguardar nossa aceitação.
+
+Após tudo estiver certo, vamos formar um plano para os próximos trabalhos.
+
+
