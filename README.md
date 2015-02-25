@@ -55,4 +55,3 @@ The key fingerprint is:
 Após tudo estiver certo, vamos formar um plano para os próximos trabalhos.
 
 
-teste git commit

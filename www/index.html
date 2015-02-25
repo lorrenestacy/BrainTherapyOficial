@@ -42,6 +42,10 @@
     <!-- MENU -->
     <!-- MENU -->
     <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
+    <!-- MENU -->
 
     <head>
         <link rel="stylesheet" type="text/css" href="galleria/galleria.classic.css">
@@ -152,6 +156,13 @@
         <script type="application/javascript" src="galleria/galleria-1.3.6.min.js"></script>
         <script type="application/javascript" src="galleria/galleria.classic.min.js"></script>
         <script type="application/javascript" src="galleria/galleria-startup.js"></script>
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="justgage/js/raphael.min.js"></script>
+        <script type="application/javascript" src="justgage/js/justgage.min.js"></script>
+        <script type="application/javascript" src="justgage/gauges.js"></script>
     </head>
 
     <body id="afui" class="">
@@ -250,6 +261,9 @@
         </header>
         <header class="wrapping-col wrap-element uib_w_205 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-20"><a class="button backButton">Back</a>
             <h1>MINHAS MEMORIAS - PESSOAS</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_213 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-21"><a class="button backButton">Back</a>
+            <h1>OUÇA SUA MÚSICA!</h1>
         </header>
         <div id="content" class="uwrap">
             <div class="upage panel fundo-principal" id="mainpage" data-header="none" data-footer="none">
@@ -1256,7 +1270,16 @@
                     </div>
                 </div>
             </div>
+            <div class="upage vertical-col left panel" id="tocar_musica" data-header="af-header-21" data-footer="af-footer-6">
+                <audio class="widget uib_w_214 d-margins" data-uib="media/audio" data-ver="0" controls="controls">
+                    <source src="my/video/src.mp3" type="audio/mpeg">
+                        <source src="my/video/src.ogg" type="audio/ogg">
+                </audio>
+                <div class="uib-justgage gauge no_wrap widget uib_w_215" data-uib="widgets/justgage" data-ver="0" id="uib-justgage-0" data-gauge="{'service method':'none','controller type':'single','data path':'not set','title':'Gauge','min':0,'max':100,'hideMinMax':0,'hideValue':0,'hideInnerShadow':1}"
+                data-rpath="null" data-array="not set"></div>
+            </div>
         </div>
+        <footer class="wrap-element uib_w_212" data-uib="app_framework/footer" data-ver="1" id="af-footer-6"></footer>
         <footer class="wrap-element uib_w_128" data-uib="app_framework/footer" data-ver="1" id="af-footer-0"></footer>
         <footer class="wrap-element uib_w_124" data-uib="app_framework/footer" data-ver="1" id="af-footer-1"></footer>
 
@@ -1293,9 +1316,23 @@
         </div>
         <div class="upage vertical-col left panel" id="quiz" data-header="af-header-3" data-footer="af-footer-3"></div>
         <div class="upage vertical-col left panel" id="musicas" data-header="af-header-4" data-footer="af-footer-4">
+
+            <div class="widget uib_w_210 d-margins titulo_musicas" data-uib="media/text" data-ver="0">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div>
+                    <p>Player de músicas. Escolha uma opção!</p>
+                </div>
+            </div>
             <div class="uib-grid widget uib_w_209 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                 <div class="uib-grid-row">
-                    <div class="uib-grid-cell widget-container"></div>
+                    <div class="uib-grid-cell widget-container">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_211 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        data-transition="fade" href="#tocar_musica">
+                            <img src="images/springboard/chico.jpg">
+                            <span class="uib-caption">Chico Buarque</span>
+                        </a>
+                    </div>
                     <div class="uib-grid-cell widget-container"></div>
                     <div class="uib-grid-cell widget-container"></div>
                 </div>
