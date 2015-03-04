@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+    <!-- MENU -->
     <!-- MENU -->
 
     <head>
@@ -46,7 +46,7 @@
         <script type="application/javascript" src="webrtc/chatwidget.js"></script>
         <script type="application/javascript" src="webrtc/init.js"></script>
         <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
-        <!-- MENU -->
+    
         <script src="intelxdk.js"></script>
         <script src="cordova.js"></script>
         <script src="xhr.js"></script>
@@ -98,7 +98,11 @@
                 		includeJavaScript("app/springboard.js");
                         }, 100);
         </script>
-        <!-- FIM MENU -->
+		
+		
+		
+		
+        
 
         <!--            
             You may substitute jQuery for the App Framework selector library.
@@ -213,7 +217,7 @@
             <h1>MINHAS MEMORIAS - ANIMAIS</h1>
         </header>
         <header class="wrapping-col wrap-element uib_w_197 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-19">
-		<a class="button backButton">Back</a>
+            <a class="button backButton">Back</a>
             <h1>MINHAS MEMORIAS - MINHAS COMIDAS FAVORIDAS</h1>
         </header>
         <header class="wrapping-col wrap-element uib_w_205 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-20"><a class="button backButton">Back</a>
@@ -223,6 +227,7 @@
             <h1>OUÇA SUA MÚSICA!</h1>
         </header>
         <div id="content" class="uwrap">
+            <!-- PÁG INICIAL - APRESENTAÇÃO -->
             <div class="upage panel fundo-principal" id="mainpage" data-header="none" data-footer="none">
                 <div class="upage-outer">
                     <div class="upage-content content-area vertical-col" id="uib_page_2">
@@ -260,7 +265,7 @@
                 </div>
 
             </div>
-            <!-- pág menu principal -->
+            <!-- FIM PÁG INICIAL - APRESENTAÇÃO -->
 
             <!-- stylesheets -->
             <!-- note: use jquery.mobile-1.1.1.min.css (and jquery.mobile-1.1.1-custom.css) for production -->
@@ -274,18 +279,14 @@
 
             <!-- entra conteudo da pág menu principal -->
 
-            <!-- fim pág principal -->
+            <!--  pág MENU principal -->
             <div class="upage vertical-col panel" id="menu_principal" data-header="af-header-0" data-footer="none" data-role="page" data-theme="a">
 
                 <input type="text" id="Data">Atividades: Café - 9:00 Tomar antibiótico da pneumonia - às 9:40 Ir ao pediatra - Dr. Carlos - 10:30
 
                 <!-- content -->
                 <div data-role="content" class="springboard-container" style="background-color: #FF3300">
- 
-                    
-                    
-                    
-                    
+
                 </div>
 
                 <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
@@ -351,16 +352,21 @@
                     </div>
                 </div>
             </div>
+            <!--  FIM pág MENU principal -->
+
             <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
             <div="">
             </a>
-			<!-- PAGINA DE INICIO DO QUIZ -->
+            <!-- PAGINA DE INICIO DO QUIZ REDIRECIONADA-->
             <div class="upage vertical-col left panel" id="inicio_game_memoria" data-header="af-header-6" data-footer="af-footer-0">
-						
-            </div>
-			<!-- FIM DA PAGINA DE INICIO DO QUIZ -->
+
 			
-			<!-- PAGINA DE INSERCAO DE CONTEUDO -->
+			
+			
+            </div>
+            <!-- FIM DA PAGINA DE INICIO DO QUIZ -->
+
+            <!-- PAGINA DE INSERCAO DE CONTEUDO -->
             <div class="upage vertical-col panel" id="inserir_lembranca" data-header="af-header-8" data-footer="none">
                 <div class="uib-grid widget uib_w_115 grid-text grid-height primeira_pag_memorias" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -405,7 +411,7 @@
                                 <img src="images/springboard/trabalho.png">
                                 <span class="uib-caption">TRABALHO</span>
                             </a>
- 
+
                         </div>
                         <div class="uib-grid-cell widget-container">
                             <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_204 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
@@ -417,9 +423,9 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA DE INSERCAO DE CONTEUDO -->
-			
-			<!-- PAGINA DE INSERCAO DE CONTEUDO: LUGARES OBS.: ESTÁ VAZIA-->
+            <!-- FIM DA PAGINA DE INSERCAO DE CONTEUDO -->
+
+            <!-- PAGINA DE INSERCAO DE CONTEUDO: LUGARES OBS.: ESTÁ VAZIA-->
             <div class="upage vertical-col left panel" id="memorias_lugares" data-header="af-header-16" data-footer="none">
                 <div class="uib-grid widget uib_w_195 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -439,9 +445,9 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA DE INSERCAO DE CONTEUDO: LUGARES OBS.: ESTÁ VAZIA-->
-			
-			<!-- PAGINA DE AGENDAMENTO DA MANHA-->
+            <!-- FIM DA PAGINA DE INSERCAO DE CONTEUDO: LUGARES OBS.: ESTÁ VAZIA-->
+
+            <!-- PAGINA DE AGENDAMENTO DA MANHA-->
             <div class="upage vertical-col panel" id="agendar_manha" data-header="af-header-14" data-footer="none">
                 <div class="uib-grid widget uib_w_139 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -568,9 +574,9 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA DE AGENDAMENTO DA MANHA-->
-			
-			<!-- PAGINA DE AGENDA - INICIAL -->
+            <!-- FIM DA PAGINA DE AGENDAMENTO DA MANHA-->
+
+            <!-- PAGINA DE AGENDA - INICIAL -->
             <div class="upage vertical-col left panel" id="Agenda" data-header="af-header-11" data-footer="none">
                 <div class="uib-grid widget uib_w_146 grid-text grid-height calendar" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -872,9 +878,9 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA DE AGENDA - INICIAL -->
-			
-			<!-- PAGINA DE AGENDAMENTO da TARDE -->
+            <!-- FIM DA PAGINA DE AGENDA - INICIAL -->
+
+            <!-- PAGINA DE AGENDAMENTO da TARDE -->
             <div class="upage vertical-col panel" id="agendar_tarde" data-header="af-header-12" data-footer="none">
                 <div class="uib-grid widget uib_w_162 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -1044,9 +1050,9 @@
                 </div>
 
             </div>
-			<!-- FIM DA PAGINA DE AGENDAMENTO da TARDE -->
-			
-			<!-- PAGINA DE AGENDAMENTO da NOITE -->
+            <!-- FIM DA PAGINA DE AGENDAMENTO da TARDE -->
+
+            <!-- PAGINA DE AGENDAMENTO da NOITE -->
             <div class="upage vertical-col panel" id="agendar_noite" data-header="af-header-13" data-footer="none">
                 <div class="uib-grid widget uib_w_174 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -1177,9 +1183,9 @@
                     </div>
                 </div>
             </div>
-			<!--FIM DA PAGINA DE AGENDAMENTO da NOITE -->
-			
-			<!-- PAGINA VAZIA -->
+            <!--FIM DA PAGINA DE AGENDAMENTO da NOITE -->
+
+            <!-- PAGINA VAZIA -->
             <div class="upage vertical-col panel" id="fazer_nota_agendamento" data-header="af-header-15" data-footer="none">
                 <div class="widget uib_w_188 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0">
                     <div class="widget uib_w_208 d-margins" data-uib="media/text" data-ver="0">
@@ -1192,21 +1198,21 @@
                 </div>
 
             </div>
-			<!-- FIM - PAGINA VAZIA -->
-			
-			<!-- PAGINA VAZIA MEMO-BICHOS-->
+            <!-- FIM - PAGINA VAZIA -->
+
+            <!-- PAGINA VAZIA MEMO-BICHOS-->
             <div class="upage vertical-col panel" id="memorias_bichos" data-header="af-header-18" data-footer="none">
-			
-			</div>
-			<!-- PAGINA VAZIA MEMO-BICHOS-->
-			
-			<!-- PAGINA MEMO-COMIDAS-->
+
+            </div>
+            <!-- PAGINA VAZIA MEMO-BICHOS-->
+
+            <!-- PAGINA MEMO-COMIDAS-->
             <div class="upage vertical-col panel" id="memorias_comidas" data-header="af-header-19" data-footer="none">
-						
-			</div>
-			<!-- VAZIA PAGINA MEMO-COMIDAS-->
-			
-			<!-- PAGINA MEMO-TRABALHO-->
+
+            </div>
+            <!-- VAZIA PAGINA MEMO-COMIDAS-->
+
+            <!-- PAGINA MEMO-TRABALHO-->
             <div class="upage vertical-col panel" id="memorias_trabalho" data-header="af-header-17" data-footer="none">
                 <div class="uib-grid widget uib_w_193 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
@@ -1236,11 +1242,100 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA MEMO-TRABALHO-->
-			
-			<!-- PAGINA MEMO-PESSOAS-->
+            <!-- FIM DA PAGINA MEMO-TRABALHO-->
+
+            <!-- PAGINA MEMO-PESSOAS-->
             <div class="upage vertical-col left panel" id="memorias_pessoas" data-header="af-header-20" data-footer="none">
-                <div class="uib-grid widget uib_w_206 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+			
+			<script src="http://www.google.com/jsapi"></script>
+		<script>
+      google.load("jquery", "1.4.1");
+    </script>
+		<script>
+      var db = window.openDatabase("scores", "", "Previous Scores", 1024*1000);
+
+      function insertScore(hole_num, num_strokes, course_id, email) {
+       db.transaction(function(tx) {
+          tx.executeSql('INSERT INTO Strokes (course_id, hole_num, num_strokes, email) VALUES (?, ?, ?, ?)', [course_id, hole_num, num_strokes, email]);
+       });
+      }
+
+      function renderResults(tx, rs) {
+        e = $('#previous_scores');
+        e.html("");
+        for(var i=0; i < rs.rows.length; i++) {
+          r = rs.rows.item(i);
+          e.html(e.html() + 'id: ' + r['id'] + ', hole_num: ' + r['hole_num'] + ', num_strokes: ' + r['num_strokes'] + ', email: ' + r['email'] + '<br />');
+        }
+      }
+
+      function renderScores(email) {
+        db.transaction(function(tx) {
+          if (!(email === undefined)) {
+            tx.executeSql('SELECT * FROM Strokes WHERE email = ?', [email], renderResults);
+          } else {
+            tx.executeSql('SELECT * FROM Strokes', [], renderResults);
+          }
+        });
+      }
+
+      $(document).ready(function() {
+        db.transaction(function(tx) {
+          tx.executeSql('CREATE TABLE IF NOT EXISTS Courses(id INTEGER PRIMARY KEY, name TEXT, latitude FLOAT, longitude FLOAT)', []);
+          tx.executeSql('CREATE TABLE IF NOT EXISTS Strokes(id INTEGER PRIMARY KEY, course_id INTEGER, hole_num INTEGER, num_strokes INTEGER, email TEXT)', []);
+        });
+
+        $('#score_form').submit(function() {
+         strokes = { 1: $('#hole1').val(), 2: $('#hole2').val() };
+          for (var hole_num in strokes) {
+            insertScore(hole_num, strokes[hole_num], 1, $('#email').val());
+          }
+
+          renderScores();
+          return false;
+        });
+
+        $('#filter_previous_scores_form').submit(function() {
+          e = $('#filter_by_email').val();
+          renderScores(e);
+          return false;
+        });
+
+        renderScores();
+      });
+	  
+    </script>
+			
+				<form method="get" id="score_form">
+      <div>
+        <label for="1">Hole 1</label>
+        <input type="number" min="1" value="4" id="hole1" name="hole1" size="2" step="1" />
+      </div>
+      <div>
+        <label for="2">Hole 2</label>
+        <input type="number" min="1" value="4" id="hole1" name="hole2" size="2" step="1" />
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Enter your email address" size="40"/>
+      </div>
+      <div>
+        <input type="submit" value="Upload Score" />
+      </div>
+    </form>
+    <div>
+      <h2>Previous Scores</h2>
+      <form id="filter_previous_scores_form">
+        <input type="email" placeholder="Filter scores by email" size="40" id="filter_by_email" /><br />
+        <input type="submit" value="Filter" />
+      </form>
+    </div>
+    <div id="previous_scores">
+
+    </div>
+
+    </div>
+
+			   <div class="uib-grid widget uib_w_206 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
                             <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_207 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
@@ -1264,9 +1359,9 @@
                     </div>
                 </div>
             </div>
-			<!-- FIM DA PAGINA MEMO-PESSOAS-->
-			
-			<!-- PAGINA TOCANDO A FAIXA DE MÚSICA-->
+            <!-- FIM DA PAGINA MEMO-PESSOAS-->
+
+            <!-- PAGINA TOCANDO A FAIXA DE MÚSICA-->
             <div class="upage vertical-col left panel" id="tocar_musica" data-header="af-header-21" data-footer="af-footer-6">
                 <audio class="widget uib_w_214 d-margins" data-uib="media/audio" data-ver="0" controls="controls">
                     <source src="my/video/src.mp3" type="audio/mpeg">
@@ -1275,13 +1370,13 @@
                 <div class="uib-justgage gauge no_wrap widget uib_w_215" data-uib="widgets/justgage" data-ver="0" id="uib-justgage-0" data-gauge="{'service method':'none','controller type':'single','data path':'not set','title':'Gauge','min':0,'max':100,'hideMinMax':0,'hideValue':0,'hideInnerShadow':1}"
                 data-rpath="null" data-array="not set"></div>
             </div>
-			<!-- FIM DA PAGINA TOCANDO A FAIXA DE MÚSICA-->
-			
-			<!-- PAGINA CONFIGURAÇÕES - VAZIA-->
+            <!-- FIM DA PAGINA TOCANDO A FAIXA DE MÚSICA-->
+
+            <!-- PAGINA CONFIGURAÇÕES - VAZIA-->
             <div class="upage vertical-col left panel" id="configuracoes" data-header="none" data-footer="none">
-			
-			</div>
-			<!-- FIM PAGINA CONFIGURAÇÕES - VAZIA-->
+
+            </div>
+            <!-- FIM PAGINA CONFIGURAÇÕES - VAZIA-->
         </div>
         <footer class="wrap-element uib_w_212" data-uib="app_framework/footer" data-ver="1" id="af-footer-6"></footer>
         <footer class="wrap-element uib_w_128" data-uib="app_framework/footer" data-ver="1" id="af-footer-0"></footer>
@@ -1291,7 +1386,7 @@
         <div="">
         </a>
 
-		<!-- PAGINA JOGO MEMORIA - PRINCIPAL DO QUIZ-->
+        <!-- PAGINA JOGO MEMORIA - PRINCIPAL DO QUIZ-->
         <div class="upage panel" id="memoria" data-header="af-header-2" data-footer="af-footer-2">
             <div class="upage-outer">
                 <div class="upage-content content-area vertical-col left" id="page_93_67">
@@ -1302,7 +1397,7 @@
                                 <figcaption data-position="bottom"></figcaption>
                             </figure>
                         </div>
-                        <section class="card-header widget-container content-area vertical-col"><a class="button widget uib_w_104" data-uib="app_framework/button" data-ver="1">COMEÇAR!</a>
+                        <section class="card-header widget-container content-area vertical-col"><a class="button widget uib_w_104" data-uib="app_framework/button" data-ver="1" href="#inicio_game_memoria" data-transition="fade">COMEÇAR!</a>
                         </section>
                     </div>
                 </div>
@@ -1319,21 +1414,40 @@
                 </div>
             </div>
         </div>
-		<!-- FIM DA PAGINA JOGO MEMORIA - PRINCIPAL DO QUIZ-->
-		
-		<!-- PAGINA VAZIA-->
+        <!-- FIM DA PAGINA JOGO MEMORIA - PRINCIPAL DO QUIZ-->
+
+        <!-- PAGINA VAZIA-->
         <div class="upage vertical-col left panel" id="quiz" data-header="af-header-3" data-footer="af-footer-3"></div>
-		<!-- FIM PAGINA VAZIA-->
-        
-		<!-- PAGINA MUSICAS-->
-		<div class="upage vertical-col left panel" id="musicas" data-header="af-header-4" data-footer="af-footer-4">
-		    <div class="widget uib_w_210 d-margins titulo_musicas" data-uib="media/text" data-ver="0">
+        <!-- FIM PAGINA VAZIA-->
+
+        <!-- PAGINA MUSICAS-->
+        <div class="upage vertical-col left panel" id="musicas" data-header="af-header-4" data-footer="af-footer-4">
+            <div class="widget uib_w_210 d-margins titulo_musicas" data-uib="media/text" data-ver="0">
                 <div class="widget-container left-receptacle"></div>
                 <div class="widget-container right-receptacle"></div>
                 <div>
                     <p>Player de músicas. Escolha uma opção!</p>
                 </div>
             </div>
+			<!--player de musica -->
+			<audio id="audio_with_controls" controls autobuffer>
+      <source src="http://playground.html5rocks.com/samples/html5_misc/rushus-modal_blues.mp3" type="audio/mpeg" />
+      <source src="http://playground.html5rocks.com/samples/html5_misc/rushus-modal_blues.ogg" type="audio/ogg" />
+        Audio tag not supported
+    </audio>
+    <!-- some actions from Javascript -->
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="duration">Show duration</button>
+    <div id="duration-log"></div>
+    <script>
+      var song = document.getElementById('audio_with_controls');
+      document.getElementById('play').addEventListener('click', function() { song.play(); }, false);
+      document.getElementById('pause').addEventListener('click', function() { song.pause(); }, false);
+      document.getElementById('duration').addEventListener('click', function() { document.querySelector('#duration-log').textContent = song.duration; }, false);
+    </script>
+	
+	<!--FIM player de musica -->
             <div class="uib-grid widget uib_w_209 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
                 <div class="uib-grid-row">
                     <div class="uib-grid-cell widget-container">
@@ -1358,18 +1472,18 @@
                 </div>
             </div>
         </div>
-		<!-- FIM DA PAGINA MUSICAS-->
-		
-		<!-- PAGINA VAZIA-->
+        <!-- FIM DA PAGINA MUSICAS-->
+
+        <!-- PAGINA VAZIA-->
         <div class="upage panel" id="agendar_dia" data-header="af-header-10" data-footer="af-footer-8">
-            
+
         </div>
-		<!-- FIM DA PAGINA VAZIA-->
-		
-		<!-- PAGINA VAZIA-->
+        <!-- FIM DA PAGINA VAZIA-->
+
+        <!-- PAGINA VAZIA-->
         <div class="upage vertical-col left panel" id="dia_agenda" data-header="af-header-5" data-footer="af-footer-9">
-		</div>
-		<!-- FIM DA PAGINA VAZIA-->
+        </div>
+        <!-- FIM DA PAGINA VAZIA-->
 
         <script>
             function dataAtualFormatada(){
