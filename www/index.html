@@ -97,6 +97,52 @@
                     	includeJavaScript("vendor/jquery.mobile/jquery.mobile-1.1.1.js");
                 		includeJavaScript("app/springboard.js");
                         }, 100);
+                       //inicio linha de banco 
+                       
+                       
+                       // Criando/abrindo o banco
+var db = openDatabase("banco", "1.0", "base de dados da aplicacao", 200000);
+
+// criando a tabela caso ela não exista
+    db.transaction(function(transaction){
+        transaction.executeSql('CREATE TABLE IF NOT EXISTS pessoas ("id" INTEGER PRIMARY KEY, "nome" TEXT NOT NULL, "apelido" TEXT NOT NULL, "idade" INTEGER NOT NULL, "parentesco" TEXT NOT NULL)', [], null, db.onError);
+    })
+
+// função callback de erro
+db.onError = function(transaction, e) {
+  alert("Aconteceu um erro: " + e.message);
+  console.log(e.message);
+}
+
+// função de callback de sucesso de insert
+db.onSuccess = function(transaction, e) {
+  alert("Dados Gravados com Sucesso!");
+  console.log(e);
+}
+
+// função temporaria que lista resultados - faz listagem
+db.getResults = function (transaction, r) {
+    console.log('deu certo!');
+    console.log(r);
+
+   for(var i = 0; i < r.rows.length; i++){
+       console.log(r.rows.item(i)[['id']]);
+       console.log(r.rows.item(i)[['nome']]);
+       console.log(r.rows.item(i)[['apelido']]);
+   }
+}
+
+// aqui vai o insert
+db.transaction(function(transaction){
+  transaction.executeSql("INSERT INTO pessoas(nome, apelido, idade, parentesco) VALUES(?, ?, ?, ?)", [$('#nome').val(), $('#apelido').val(), $('#idade').val(), $('#parentesco').val(), db.onSuccess, db.onError);
+})
+
+// consulta no banco
+db.transaction(function(transaction){
+    transaction.executeSql("SELECT * FROM pessoas", [], db.getResults, db.onError);
+}) 
+//fim linha de banco
+                        
         </script>
 		
 		
